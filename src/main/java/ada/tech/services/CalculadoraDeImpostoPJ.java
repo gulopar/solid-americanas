@@ -1,4 +1,4 @@
-package ada.tech;
+package ada.tech.services;
 
 public class CalculadoraDeImpostoPJ implements CalculadoraDeImpostoInterface{
 
@@ -9,7 +9,7 @@ public class CalculadoraDeImpostoPJ implements CalculadoraDeImpostoInterface{
 
     @Override
     public Double calcularISS(Double valor) {
-        return valor * 0.05;
+        return valor * 0.08;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package ada.tech;
+package ada.tech.services;
 
 public class CalculadoraDeImpostoPF implements CalculadoraDeImpostoInterface{
 

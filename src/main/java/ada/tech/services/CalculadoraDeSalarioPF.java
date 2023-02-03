@@ -1,7 +1,11 @@
-package ada.tech;
+package ada.tech.services;
+
+
+import ada.tech.model.funcionario.FuncionarioCLT;
 
 public class CalculadoraDeSalarioPF implements CalculadoraDeSalario<FuncionarioCLT> {
     private final CalculadoraDeImpostoPF calculadoraDeImposto = new CalculadoraDeImpostoPF();
+    private final CalculadoraDeHoraExtraService<FuncionarioCLT> calculadoraDeHoraExtraService = new CalculadoraDeHoraExtraService();
 
     public Double calcularSalarioDoDia(FuncionarioCLT funcionarioCLT) {
 
@@ -11,23 +15,14 @@ public class CalculadoraDeSalarioPF implements CalculadoraDeSalario<FuncionarioC
         int totalDeHoras = funcionarioCLT.getHorasNormais() + funcionarioCLT.getHorasExtras();
 
         if (totalDeHoras > 8) {
-            valorHoraExtra = calcularHoraExtra(funcionarioCLT.getValorHora(), totalDeHoras, funcionarioCLT.percentualHoraExtra());
-        } else {
-            valorHorasNormais = funcionarioCLT.getHorasNormais() * funcionarioCLT.getValorHora();
+            valorHoraExtra = calculadoraDeHoraExtraService.calcularHoraExtra(funcionarioCLT);
         }
+
+        valorHorasNormais = funcionarioCLT.getHorasNormais() * funcionarioCLT.getValorHora();
 
         Double salarioBruto =  valorHorasNormais + valorHoraExtra;
         return salarioBruto - calculadoraDeImposto.calcularImpostoTotal(salarioBruto);
 
     }
-
-    public Double calcularHoraExtra(Double valorHora, Integer horasTrabalhadas, Double percentualHoraExtra) {
-        int quantidadeDeHorasExtras = horasTrabalhadas - 8;
-        if (quantidadeDeHorasExtras > 0) {
-            return ((valorHora * percentualHoraExtra) + valorHora) * quantidadeDeHorasExtras;
-        }
-        return 0.0;
-    }
-
 
 }

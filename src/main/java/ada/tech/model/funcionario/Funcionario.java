@@ -1,6 +1,6 @@
-package ada.tech;
+package ada.tech.model.funcionario;
 
-public class Funcionario {
+public abstract class Funcionario {
 
     private Double valorHora;
     private Integer horasNormais;

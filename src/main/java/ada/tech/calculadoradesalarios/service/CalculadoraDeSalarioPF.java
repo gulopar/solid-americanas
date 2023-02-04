@@ -1,7 +1,7 @@
-package ada.tech.services;
+package ada.tech.calculadoradesalarios.service;
 
 
-import ada.tech.model.funcionario.FuncionarioCLT;
+import ada.tech.calculadoradesalarios.model.funcionario.FuncionarioCLT;
 
 public class CalculadoraDeSalarioPF implements CalculadoraDeSalario<FuncionarioCLT> {
     private final CalculadoraDeImpostoPF calculadoraDeImposto = new CalculadoraDeImpostoPF();

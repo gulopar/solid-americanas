@@ -1,4 +1,4 @@
-package ada.tech.model.funcionario;
+package ada.tech.calculadoradesalarios.model.funcionario;
 
 public abstract class Funcionario {
 

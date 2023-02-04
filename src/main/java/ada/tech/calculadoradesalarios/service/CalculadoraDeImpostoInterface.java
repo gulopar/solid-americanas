@@ -1,4 +1,4 @@
-package ada.tech.services;
+package ada.tech.calculadoradesalarios.service;
 
 public interface CalculadoraDeImpostoInterface {
 

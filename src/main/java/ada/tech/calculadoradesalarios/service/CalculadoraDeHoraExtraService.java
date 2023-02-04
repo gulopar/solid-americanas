@@ -1,8 +1,8 @@
-package ada.tech.services;
+package ada.tech.calculadoradesalarios.service;
 
 
-import ada.tech.model.funcionario.Funcionario;
-import ada.tech.model.funcionario.RealizaHoraExtra;
+import ada.tech.calculadoradesalarios.model.funcionario.Funcionario;
+import ada.tech.calculadoradesalarios.model.funcionario.RealizaHoraExtra;
 
 public class CalculadoraDeHoraExtraService<T extends Funcionario & RealizaHoraExtra> {
 

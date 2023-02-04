@@ -1,4 +1,4 @@
-package ada.tech.model.funcionario;
+package ada.tech.calculadoradesalarios.model.funcionario;
 
 public class FuncionarioCLT extends Funcionario implements RealizaHoraExtra {
 

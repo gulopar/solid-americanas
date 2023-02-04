@@ -1,6 +1,6 @@
-package ada.tech.services;
+package ada.tech.calculadoradesalarios.service;
 
-public class CalculadoraDeImpostoPJ implements CalculadoraDeImpostoInterface{
+public class CalculadoraDeImpostoPF implements CalculadoraDeImpostoInterface{
 
     @Override
     public Double calcularINSS(Double valor) {
@@ -9,7 +9,7 @@ public class CalculadoraDeImpostoPJ implements CalculadoraDeImpostoInterface{
 
     @Override
     public Double calcularISS(Double valor) {
-        return valor * 0.08;
+        throw new RuntimeException("PF não paga ISS");
     }
 
     @Override
@@ -19,7 +19,7 @@ public class CalculadoraDeImpostoPJ implements CalculadoraDeImpostoInterface{
 
     @Override
     public Double calcularImpostoTotal(Double valor) {
-        return calcularINSS(valor) + calcularImpostoDeRenda(valor) + calcularISS(valor);
+        return calcularINSS(valor) + calcularImpostoDeRenda(valor);
     }
 
 }

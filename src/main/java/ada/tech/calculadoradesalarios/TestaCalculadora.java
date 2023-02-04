@@ -1,11 +1,11 @@
-package ada.tech;
+package ada.tech.calculadoradesalarios;
 
-import ada.tech.model.funcionario.Funcionario;
-import ada.tech.model.funcionario.FuncionarioCLT;
-import ada.tech.model.funcionario.FuncionarioPJ;
-import ada.tech.services.CalculadoraDeSalario;
-import ada.tech.services.CalculadoraDeSalarioPF;
-import ada.tech.services.CalculadoraDeSalarioPJ;
+import ada.tech.calculadoradesalarios.model.funcionario.Funcionario;
+import ada.tech.calculadoradesalarios.model.funcionario.FuncionarioCLT;
+import ada.tech.calculadoradesalarios.model.funcionario.FuncionarioPJ;
+import ada.tech.calculadoradesalarios.service.CalculadoraDeSalario;
+import ada.tech.calculadoradesalarios.service.CalculadoraDeSalarioPF;
+import ada.tech.calculadoradesalarios.service.CalculadoraDeSalarioPJ;
 
 public class TestaCalculadora {
 

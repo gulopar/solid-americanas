@@ -12,7 +12,7 @@ public class CalculadoraDePreco {
         this.calculadoraDeDesconto = calculadoraDeDesconto;
     }
 
-    public Double calcular(Produto produto, Double km) {
+    public Double calcular(Produto produto, Double km) throws MuitoLongeException {
         Double frete = calculadoraDeFrete.calcular(produto, km);
         Double desconto = calculadoraDeDesconto.calcular(produto);
         return produto.getPreco() + frete - desconto;

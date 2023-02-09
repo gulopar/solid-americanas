@@ -8,8 +8,8 @@ public class TestaGeradorDeNumerosAleatorios {
         // pre condicao = entrada
         // pos condicao = saida
 
-        GeradorDeNumerosAleatorios geradorDeNumerosAleatorios = new GeradorDeNumerosAleatoriosNegativos();
-        Double randomNumber = geradorDeNumerosAleatorios.generate();
+        GeradorDeNumerosAleatoriosPositivo geradorDeNumerosAleatoriosPositivo = new GeradorDeNumerosAleatoriosPositivoNegativos();
+        Double randomNumber = geradorDeNumerosAleatoriosPositivo.generate();
 
         if (randomNumber < 5) {
             System.out.println("Sem sorte hoje -> " + randomNumber);

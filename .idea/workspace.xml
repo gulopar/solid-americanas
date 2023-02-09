@@ -7,8 +7,17 @@
     <list default="true" id="e6069773-bf43-4070-a7ca-d34dfeef26a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/calculadoradeprecos/TestaCalculadoraDePreco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/calculadoradeprecos/TestaCalculadoraDePreco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/calculadoradeprecos/service/CalculadoraDeFrete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/calculadoradeprecos/service/CalculadoraDeFrete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/calculadoradeprecos/service/CalculadoraDePreco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/calculadoradeprecos/service/CalculadoraDePreco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/isp/pagamento/ExibidorDeFormaDePagamentos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/isp/pagamento/ExibidorDeFormaDePagamentos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/isp/pagamento/ExibidorDeFormaDePagamentosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/isp/pagamento/ExibidorDeFormaDePagamentosImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/CalculadoraRestrita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/CalculadoraRestrita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/CalculadoraRobusta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/CalculadoraRobusta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/GeradorDeNumerosAleatorios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/GeradorDeNumerosAleatoriosPositivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/GeradorDeNumerosAleatoriosGrandes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/GeradorDeNumerosAleatoriosPositivoGrandes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/GeradorDeNumerosAleatoriosNegativos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/GeradorDeNumerosAleatoriosPositivoNegativos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/GeradorDeNumerosAleatoriosPequenos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/GeradorDeNumerosAleatoriosPositivoPequenos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/TestaCalculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/TestaCalculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/TestaGeradorDeNumerosAleatorios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ada/tech/liskov/TestaGeradorDeNumerosAleatorios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +57,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ada.tech.isp.pagamento" />
+      <recent name="ada.tech.isp" />
       <recent name="ada.tech.liskov" />
       <recent name="ada.tech.calculadoradeprecos.service" />
       <recent name="ada.tech" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestaGeradorDeNumerosAleatorios">
+  <component name="RunManager" selected="Application.TestaMeioDePagamento">
     <configuration name="TestaCalculadora" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ada.tech.liskov.TestaCalculadora" />
       <module name="solid-americanas" />
@@ -93,6 +104,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestaMeioDePagamento" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ada.tech.isp.pagamento.TestaMeioDePagamento" />
+      <module name="solid-americanas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ada.tech.isp.pagamento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestaPessoa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ada.tech.TestaPessoa" />
       <module name="solid-americanas" />
@@ -108,9 +132,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestaGeradorDeNumerosAleatorios" />
+        <item itemvalue="Application.TestaMeioDePagamento" />
         <item itemvalue="Application.TestaCalculadora" />
         <item itemvalue="Application.TestaCalculadoraDePreco" />
+        <item itemvalue="Application.TestaGeradorDeNumerosAleatorios" />
         <item itemvalue="Application.TestaPessoa" />
       </list>
     </recent_temporary>

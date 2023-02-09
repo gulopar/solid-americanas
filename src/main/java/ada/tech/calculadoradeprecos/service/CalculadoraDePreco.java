@@ -5,7 +5,7 @@ import ada.tech.calculadoradeprecos.model.Produto;
 public class CalculadoraDePreco {
 
     private final CalculadoraDeFrete calculadoraDeFrete;
-    private CalculadoraDeDesconto calculadoraDeDesconto;
+    private final CalculadoraDeDesconto calculadoraDeDesconto;
 
     public CalculadoraDePreco(CalculadoraDeFrete calculadoraDeFrete, CalculadoraDeDesconto calculadoraDeDesconto) {
         this.calculadoraDeFrete = calculadoraDeFrete;

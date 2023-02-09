@@ -8,7 +8,7 @@ public class CalculadoraRestrita extends CalculadoraSimples {
 
         // esta restringindo mais do que o pai -> fere o principio da substituiçã de LISKOV
         if (n1 < 5 || n2 < 5) {
-            throw new RuntimeException("Não calculamos numero negativo");
+            throw new RuntimeException("Não calculamos numeros menores do que 5");
         }
 
         if (n1 > 100 || n2 > 100) {

@@ -1,6 +1,6 @@
 package ada.tech.liskov;
 
-public class GeradorDeNumerosAleatorios {
+public class GeradorDeNumerosAleatoriosPositivo {
 
 
     // Devolve um numero entre 1 e 10

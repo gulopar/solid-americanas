@@ -7,21 +7,22 @@ public class TestaCalculadoraDePreco {
 
     public static void main(String[] args) throws MuitoLongeException {
 
-        CalculadoraDeFreteCorreios calculadoraDeFreteCorreios = new CalculadoraDeFreteCorreios();
-        CalculadoraDeFreteTransportadora calculadoraDeFreteTransportadora = new CalculadoraDeFreteTransportadora();
-        CalculadoraDeFreteViaBike calculadoraDeFreteViaBike = new CalculadoraDeFreteViaBike();
+        CalculadoraDeFrete calculadoraDeFreteCorreios = new CalculadoraDeFreteCorreios();
+        CalculadoraDeFrete calculadoraDeFreteTransportadora = new CalculadoraDeFreteTransportadora();
+        CalculadoraDeFrete calculadoraDeFreteViaBike = new CalculadoraDeFreteViaBike();
 
-        CalculadoraDeDescontoProgressivo calculadoraDeDescontoProgressivo = new CalculadoraDeDescontoProgressivo();
+        CalculadoraDeDesconto calculadoraDeDescontoProgressivo = new CalculadoraDeDescontoProgressivo();
+        CalculadoraDeDesconto calculadoraDeDescontoNatal = new CalculadoraDeDescontoNatal();
 
         CalculadoraDePreco calculadoraDePreco1 = new CalculadoraDePreco(calculadoraDeFreteCorreios, calculadoraDeDescontoProgressivo);
         CalculadoraDePreco calculadoraDePreco2 = new CalculadoraDePreco(calculadoraDeFreteTransportadora, calculadoraDeDescontoProgressivo);
-        CalculadoraDePreco calculadoraDePreco3 = new CalculadoraDePreco(calculadoraDeFreteViaBike, calculadoraDeDescontoProgressivo);
+        CalculadoraDePreco calculadoraDePreco3 = new CalculadoraDePreco(calculadoraDeFreteViaBike, calculadoraDeDescontoNatal);
 
 
 //        CalculadoraDePreco calculadoraDePreco2 = new CalculadoraDePreco(new CalculadoraDeFreteTransportadora(), new CalculadoraDeDescontoBlackFriday());
 
         Produto produto = new Produto(100.0, 10.00);
-        Double km = 201.00;
+        Double km = 20.00;
 
         try {
             System.out.println("Preco com a calculadora 1");

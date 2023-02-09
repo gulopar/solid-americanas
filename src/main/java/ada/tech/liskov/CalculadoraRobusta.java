@@ -3,6 +3,7 @@ package ada.tech.liskov;
 public class CalculadoraRobusta extends CalculadoraSimples {
 
 
+    // Devolve sempre um numero positivo
     // pré condições, são as validações aplicadas sobre os parametros
     public Double multiplicar(Double n1, Double n2){
 

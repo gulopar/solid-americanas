@@ -6,11 +6,23 @@ import ada.tech.calculadoradesalarios.model.funcionario.FuncionarioPJ;
 import ada.tech.calculadoradesalarios.service.CalculadoraDeSalario;
 import ada.tech.calculadoradesalarios.service.CalculadoraDeSalarioPF;
 import ada.tech.calculadoradesalarios.service.CalculadoraDeSalarioPJ;
+import ada.tech.utils.ReflectionUtils;
+
+import java.util.Set;
 
 public class TestaCalculadora {
 
-
     public static void main(String[] args) {
+
+        Set<Class<? extends Funcionario>> subtypesOf = ReflectionUtils.getSubtypesOf(Funcionario.class);
+
+        for (Class<? extends Funcionario> clazz : subtypesOf) {
+            System.out.println(clazz);
+        }
+
+    }
+
+    public static void main2(String[] args) {
 
 
         FuncionarioPJ funcionarioPJ = new FuncionarioPJ();
